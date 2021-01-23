@@ -12,7 +12,7 @@ router.get('/',async (req,res)=>{
             authors:authors, 
             searchOptions:req.query
         })
-    } catch (error) {
+    } catch {
         res.redirect('/')
     }
 })
